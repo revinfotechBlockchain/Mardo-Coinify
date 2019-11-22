@@ -15,7 +15,6 @@ p {
   background-position: center;
   background-image: url("../images/dots.png");
   background-position: right;
-  height: 50vh;
   align-items: center;
   display: flex;
 }
@@ -111,7 +110,7 @@ min-height:600px !important;
 /* iframe Section */
 .iframeCon iframe {
   /* width: 768px; */
-  width: 150%;
+  width: 100%;
   min-height: 570px;
   border: none;
   border-radius: 0px;
@@ -364,4 +363,49 @@ min-height:600px !important;
   right: 0;
   font-size: 24px;
   font-weight: 600;
+}
+
+/*Additional Css*/
+.navbar-brand{
+  font-size: 20px !important;
+}
+.font24{
+font-size: 24px;
+}
+.brokerBanner .coins-table{
+bottom: -210px;
+  left: 50%;
+  transform: translate(-50%, 210px);
+}
+.brokerBanner .pb220{
+padding-bottom: 220px;
+}
+.pt220{
+padding-top: 400px;
+}
+.coins-table .iw42{
+width: 42px;
+}
+.coins-table .table td{
+vertical-align: middle;
+}
+.coins-table .v-align{
+vertical-align: middle;
+}
+.w-md-50{
+width: 90%;
+}
+
+@media(min-width: 767px){
+.brokerBanner .coins-table{
+bottom: -120px;
+  left: 50%;
+  transform: translate(-50%, 120px);
+}
+.pt220{
+padding-top: 220px;
+}
+.w-md-50{
+width: 50%;
+}
 }

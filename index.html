@@ -11,11 +11,7 @@
   <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,600i,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
  <style>
-.navbar-brand{
-    font-size: 20px !important;
-}
-.logo-wrapper .navbar-brand{
-}
+
 </style>
  <!-- css end -->
 </head>
@@ -25,15 +21,18 @@
   <nav class="navbar navbar-expand-lg navbar-light navbarCustom sticky-top w-100">
     <div class="container">
     <div class ="logo-wrapper position-relative">
-     <img src="/images/white.png" alt="Image" height="100" width="200"> 
-      <a class="navbar-brand font-weight-bold text-white" href="#">BitcoinBrokers.tech</a></div>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+     <a href="http://buybitcoinwithcreditcardinstantly.com/"><img src="/images/white.png" alt="Image" height= "70" width="230"></a> 
+       <a class="navbar-brand font-weight-bold text-white" href="#"></a></div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto text-white">
+          <li class="nav-item">
+            <a class="nav-link px-0" href="http://buybitcoinwithcreditcardinstantly.com/">Home</a>
+          </li>
           <li class="nav-item active">
             <a class="nav-link px-0" href="#" onclick="smoothScroll('processSection')">Process</a>
           </li>
@@ -44,6 +43,9 @@
             <a class="nav-link px-0" href="#" onclick="smoothScroll('teamSection')">Team</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link px-0" href="http://buybitcoinwithcreditcardinstantly.com/blog/">Blog</a>
+          </li>
+         <li class="nav-item">
             <a class="nav-link px-0" href="#" onclick="smoothScroll('contactSection')">Contact Us</a>
           </li>
         </ul>
@@ -53,11 +55,11 @@
   <!-- header End-->
 
   <!-- Banner -->
-  <div class="Container-fluid brokerBanner py-3">
-    <div class="container">
+  <div class="brokerBanner position-relative">
+    <div class="container  mb-5 pb220">
       <div class="align-items-center d-flex justify-content-center row">
         <div class="brokerBannerContent flex-grow-1">
-          <!-- <img src="images/buyBanner.webp" class="img-fluid" /> -->
+          <!-- <img src="images/buyBanner.png" class="img-fluid" /> -->
 
           <!-- payment iframe -->
           <div class="iframeCon">
@@ -68,9 +70,10 @@
 
         <div class="brokerBannerContent d-flex align-items-center justify-content-center mr-3">
           <div class="bitcoinPpriceSection pb-5">
-            <img src="images/CoinsNet-Silver.webp" class="img-fluid d-block mx-auto" />
-            <h3 class="my-3">
-              Bitcoin (BTC): <span>​​​6653 €</span>
+            <p class="text-center mb-5 font-weight-bold font24">Buy Bitcoin With Credit Card</p>
+            <img src="images/CoinsNet-Silver.png" class="img-fluid d-block mx-auto" height= "120" width="120" />
+            <h3 class="my-3 text-center">
+             Bitcoin (BTC):<p id ="priceBTC"></p>
             </h3>
             <h4 class="text-center">1.0000</h4>
           </div>
@@ -78,18 +81,60 @@
 
       </div>
     </div>
+
+
+    <div class="position-absolute coins-table bg-white shadow p-3 w-md-50">
+      <div class="table-responsive">
+        <table class="table table-hover">
+            <thead>
+              <tr>
+                <th scope="col" class="border-0"></th>
+                <th scope="col" class="border-0">Name</th>
+                <th scope="col" class="border-0">Price (&euro;)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td class="d-flex flex-column d-md-block" ><img class="img-fluid iw42" src="./images/BitCoin.png" /> <span class="v-align mx-md-3">Bitcoin</span> <span class="text-muted v-align">BTC</span></td>
+                <td id="BTC" class="text-nowrap">unavailable</td>
+              </tr>
+              <tr>
+                  <td>2</td>
+                  <td class="d-flex flex-column d-md-block" ><img class="img-fluid iw42" src="./images/Ethereum.png" /> <span class="v-align mx-md-3">Ethereum</span> <span class="text-muted v-align">ETH</span></td>
+                  <td id="ETH" class="text-nowrap">unavailable</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td class="d-flex flex-column d-md-block" ><img class="img-fluid iw42" src="./images/BitCoinCash.png" /> <span class="v-align mx-md-3">Bitcoin Cash</span> <span class="text-muted v-align">BCH</span></td>
+                    <td id="BCH" class="text-nowrap">unavailable</td>
+                  </tr>
+                  <tr>
+                      <td>4</td>
+                      <td class="d-flex flex-column d-md-block"><img class="img-fluid iw42" src="./images/Stellar.png" /> <span class="v-align mx-md-3">Stellar</span> <span class="text-muted v-align">XLM</span></td>
+                      <td id="XLM" class="text-nowrap">unavailable</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td class="d-flex flex-column d-md-block"><img class="img-fluid iw42" src="./images/Dash.png" /> <span class="v-align mx-md-3">Dash</span> <span class="text-muted v-align">DASH</span></td>
+                        <td id="DASH" class="text-nowrap">unavailable</td>
+                      </tr>
+            </tbody>
+          </table>
+          </div>
+    </div>
   </div>
   <!-- Banner End -->
 
 
 
   <!-- Licence Section -->
-  <div class="license-container py-5">
+  <div class="license-container pb-5 pt220">
     <div class="container">
       <h1 class="text-center font-weight-bold mb-0 text-white">License</h1>
       <hr class="headBottom mt-2" />
       <div class="row mt-4">
-        <div class="col-md-6">
+        <div class="col-md-6 my-3">
           <div class="licenceContent text-center px-3 py-3 my-2">
             <h4>Activity license FVR000895</h4>
             <p class="mb-0">
@@ -98,7 +143,7 @@
             </p>
           </div>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6 my-3">
           <div class="licenceContent text-center px-3 py-3 my-2">
             <h4>Activity license FVR000895</h4>
             <p class="mb-0">
@@ -107,12 +152,12 @@
             </p>
           </div>
         </div>
-      </div>
-      <button type="button" class="mt-4 d-block mx-auto text-white font-weight-bold bg-crimpson border-0 px-3 py-2">
+      </div>    
+      <button id ="Process" type="button" class="mt-4 d-block mx-auto text-white font-weight-bold bg-crimpson border-0 px-3 py-2">
         Check Licence
       </button>
-    </div>
   </div>
+</div>
   <!-- Licence Section End -->
 
   <!-- Process -->
@@ -216,13 +261,14 @@
               <div class="timeline-panel" data-aos="fade-right">
                 <div class="timeline-heading">
                   <h5 class="timeline-title"> Receive BTC to you provide a bitcoin address </h5>
-                </div>
+ <div id="WhatIsBTC"></div>
+    </div>
+               </div>
               </div>
             </li>
           </ul>
         </div>
       </section>
-    </div>
   </div>
   <!-- Process End -->
 
@@ -233,7 +279,7 @@
     <div class="row mt-4">
       <div class="col-md-6 d-flex justify-content-center">
         <div class="mt-md-4">
-          <img src="images/whatisbitcoin.webp" class="img-fluid img-thumbnail" />
+          <img src="images/whatisbitcoin.png" class="img-fluid img-thumbnail" />
         </div>
       </div>
       <div class="col-md-6 d-flex align-items-center">
@@ -245,6 +291,8 @@
             be covered by any previous payment system.</p>
           <a href="https://docs.wixstatic.com/ugd/49367d_27ebdd1a3a384c85821c87c147880999.pdf" target="_blank"
             class="downloadPDF">
+	<div id="Team">
+        </div>
             <button type="button" class="mt-4 d-block text-white font-weight-bold bg-crimpson border-0 px-3 py-2">
               <i class="fa fa-lg fa-download" aria-hidden="true"></i> Download WhitePaper
             </button>
@@ -261,7 +309,7 @@
     <h1 class="text-center font-weight-bold mb-2 text-dark-grey">Our Team</h1>
     <hr class="headBottom mt-2" />
     <div class="teamitem text-center mx-auto p-3">
-      <img src="images/mardo.webp" class="img-fluid rounded-circle d-block mx-auto">
+      <img src="images/mardo.png" class="img-fluid rounded-circle d-block mx-auto">
       <h4 class="font-weight-bold mt-3">Mardo Soo</h4>
       <h5 class="font-weight-bold mt-1 text-muted">CEO</h5>
       <i class="fa fa-linkedin-square" aria-hidden="true"></i>
@@ -283,10 +331,7 @@
           <div class="contatContent text-white">
             <h4>We Are Here</h4>
             <p>Rävala puiestee 19, Tallinn, 1043, Estonia</p>
-            <div class="d-flex flex-column flex-md-row">
-              <span>Email: </span>
-              <span class="ml-md-2"> sales@bitcoinbrokers.tech</span>
-            </div>
+           
             <div class="d-flex flex-column flex-md-row">
               <span>Phone : </span>
               <span class="ml-md-2"> +372 5815 5779</span>
@@ -313,23 +358,15 @@
     </div>
   </div>
   <div class="copyRights px-3 py-2">
-    <p class="mb-0 text-center text-white">© 2018 Bitcoinbrokers.biz I PrivateX OÜ I Operating license nr. FIU000895 .
+    <p class="mb-0 text-center text-white">© 2019 buybitcoinwithcreditcardinstantly.com I PrivateX OÜ I Operating license nr. FIU000895 .
     </p>
   </div>
   <!-- Contact Us End -->
   <!-- script -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <script>
-    function smoothScroll(dataId) {
-      console.log(dataId)
-      $('html, body').animate({
-        scrollTop: $("#" + dataId).offset().top
-      }, 1500);
-    };
-
-  </script>
+  <script type="text/javascript" src="./js/main.js"></script>
   <!-- script end-->
 </body>
 
